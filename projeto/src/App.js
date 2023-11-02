@@ -25,9 +25,16 @@ function app() {
 
     }
     function aumenta() {
-      if (dec >= 99) {
+      if (dec >= 9) {
         setDec(0);
-        if ()
+        if (sec >= 59) {
+          setSec(0);
+          setMin(min + 1);
+        } else {
+          setSec(sec + 1);
+        }
+      } else {
+        setDec(dec + 1);
       }
     }
 
