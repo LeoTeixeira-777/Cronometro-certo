@@ -1,10 +1,7 @@
-
 import './App.css';
-
-import { func } from "prop-types";
 import { useState } from "react";
 
-function app() {
+function App() {
 
     const [dec, setDec] = useState(0);
     const [sec, setSec] = useState(0);
@@ -12,7 +9,7 @@ function app() {
     const [ligado, setLigado] = useState(false);
 
     if (ligado) {
-      setTimeout(() => { aumenta();}, 100);
+      setTimeout(() => { aumenta(); }, 100);
     }
  
     function start() {
@@ -37,8 +34,6 @@ function app() {
         setDec(dec + 1);
       }
     }
-
-    aumenta();
 
     return (
     <div className="app">
